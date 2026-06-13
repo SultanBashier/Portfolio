@@ -1,0 +1,41 @@
+<section class="section" id="services">
+    <div class="section-header">
+        <span>{{ translationService.currentLang() === 'en' ? 'What I Offer' : 'ماذا أقدم' }}</span>
+        <h2>{{ translationService.currentLang() === 'en' ? 'Professional Services' : 'خدمات احترافية' }}</h2>
+        <div class="line"></div>
+    </div>
+    <div class="services-container">
+        <div class="service-card">
+            <i class="fas fa-code"></i>
+            <h3>{{ translationService.currentLang() === 'en' ? 'Backend Engineering' : 'هندسة الباك إند' }}</h3>
+            <p>{{ translationService.currentLang() === 'en' 
+                ? 'Scalable Web APIs using ASP.NET Core, Clean Architecture, CQRS with MediatR, Redis caching & JWT security.'
+                : 'واجهات برمجة تطبيقات قابلة للتوسع باستخدام ASP.NET Core، معمارية نظيفة، CQRS مع MediatR، تخزين مؤقت Redis وأمان JWT.'
+            }}</p>
+        </div>
+        <div class="service-card">
+            <i class="fab fa-angular"></i>
+            <h3>{{ translationService.currentLang() === 'en' ? 'Interactive Frontend' : 'واجهات أمامية تفاعلية' }}</h3>
+            <p>{{ translationService.currentLang() === 'en' 
+                ? 'Modern SPAs built with Angular, TypeScript, RxJS, and responsive design for seamless UX.'
+                : 'تطبيقات حديثة بصفحة واحدة (SPA) باستخدام Angular و TypeScript و RxJS وتصميم متجاوب لتجربة مستخدم سلسة.'
+            }}</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-database"></i>
+            <h3>{{ translationService.currentLang() === 'en' ? 'Database Design' : 'تصميم قواعد البيانات' }}</h3>
+            <p>{{ translationService.currentLang() === 'en' 
+                ? 'SQL Server, PostgreSQL – optimized queries, indexing, and EF Core / Dapper for high performance.'
+                : 'SQL Server، PostgreSQL – استعلامات محسنة، فهرسة، و EF Core / Dapper لأداء عالي.'
+            }}</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>{{ translationService.currentLang() === 'en' ? 'Auth & Security' : 'المصادقة والأمان' }}</h3>
+            <p>{{ translationService.currentLang() === 'en' 
+                ? 'JWT, ASP.NET Core Identity, role-based authorization, and secure API endpoints.'
+                : 'JWT، هوية ASP.NET Core، صلاحيات مبنية على الأدوار، ونقاط نهاية API آمنة.'
+            }}</p>
+        </div>
+    </div>
+</section>

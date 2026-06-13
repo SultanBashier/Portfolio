@@ -1,0 +1,197 @@
+.section {
+    padding: 100px 10%;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-header span {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.section-header .line {
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--card-bg);
+    padding: 45px 35px;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    transition: var(--transition-mid);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(0, 210, 255, 0.05));
+    transform: translateX(-100%);
+    transition: var(--transition-mid);
+}
+
+.service-card:hover::before {
+    transform: translateX(0);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+}
+
+.service-card i {
+    font-size: 2.8rem;
+    color: var(--primary);
+    margin-bottom: 25px;
+    display: block;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.service-card p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 5%;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .services-container {
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 30px 25px;
+    }
+    
+    .service-card i {
+        font-size: 2.2rem;
+        margin-bottom: 18px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .service-card p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 4%;
+    }
+    
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-header span {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+    
+    .section-header .line {
+        width: 40px;
+        margin: 15px auto;
+    }
+    
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .service-card {
+        padding: 25px 20px;
+    }
+    
+    .service-card i {
+        font-size: 2rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .section {
+        padding: 120px 12%;
+    }
+    
+    .section-header h2 {
+        font-size: 3.2rem;
+    }
+    
+    .services-container {
+        gap: 40px;
+    }
+    
+    .service-card {
+        padding: 55px 45px;
+    }
+    
+    .service-card i {
+        font-size: 3.2rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.7rem;
+    }
+}
+
+[dir="rtl"] .section-header span {
+    letter-spacing: 0;
+}
+
+[dir="rtl"] .service-card::before {
+    transform: translateX(100%);
+}
+
+[dir="rtl"] .service-card:hover::before {
+    transform: translateX(0);
+}

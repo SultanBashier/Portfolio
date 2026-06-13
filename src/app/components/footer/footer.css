@@ -1,0 +1,114 @@
+footer {
+    padding: 60px 10% 40px;
+    background: var(--card-bg);
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.social-links a {
+    width: 50px;
+    height: 50px;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-main);
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: var(--primary);
+    color: #000;
+    transform: translateY(-8px) rotate(360deg);
+}
+
+.copyright {
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 45px 5% 30px;
+    }
+    
+    .social-links {
+        gap: 18px;
+        margin-bottom: 28px;
+    }
+    
+    .social-links a {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+    
+    .copyright {
+        font-size: 0.7rem;
+        padding-top: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 35px 4% 25px;
+    }
+    
+    .social-links {
+        gap: 15px;
+        margin-bottom: 22px;
+    }
+    
+    .social-links a {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+    
+    .social-links a:hover {
+        transform: translateY(-5px) rotate(360deg);
+    }
+    
+    .copyright {
+        font-size: 0.65rem;
+        padding-top: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
+    footer {
+        padding: 70px 12% 50px;
+    }
+    
+    .social-links {
+        gap: 32px;
+    }
+    
+    .social-links a {
+        width: 58px;
+        height: 58px;
+        font-size: 1.6rem;
+    }
+    
+    .copyright {
+        font-size: 0.9rem;
+        padding-top: 35px;
+    }
+}
+
+[dir="rtl"] .social-links a:hover {
+    transform: translateY(-8px) rotate(-360deg);
+}

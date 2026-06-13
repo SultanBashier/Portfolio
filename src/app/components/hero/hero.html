@@ -1,0 +1,34 @@
+<section class="hero" id="home">
+    <div class="hero-info">
+        <span class="badge">
+            {{ translationService.currentLang() === 'en' ? 'Available for new projects' : 'متاح لمشاريع جديدة' }} 🟢
+        </span>
+        <h1>
+            {{ translationService.currentLang() === 'en' ? "Hi, I'm Sultan" : "مرحباً، أنا سلطان" }}<br>
+            <span>{{ translationService.currentLang() === 'en' ? 'Full-Stack .NET Developer(Angular)' : 'مطور فل ستاك دوت نت(انجولر)' }}</span>
+        </h1>
+        <p>
+            {{ translationService.currentLang() === 'en' 
+                ? 'Full-Stack developer specialized in Angular, .NET/C#, and SQL. I engineer fast, scalable web solutions — turning complex requirements into clean, high‑performance applications.'
+                : 'مطور Full-Stack متخصص في Angular و .NET/C# و SQL. أطور حلول ويب سريعة وقابلة للتوسع — أحول المتطلبات المعقدة إلى تطبيقات نظيفة وعالية الأداء.'
+            }}
+        </p>
+        <div class="hero-btns">
+            <a href="#portfolio" class="btn-main btn-filled">
+                {{ translationService.currentLang() === 'en' ? 'View Work' : 'أعمالي' }} 
+                <i class="fas fa-arrow-{{ translationService.currentLang() === 'en' ? 'right' : 'left' }}"></i>
+            </a>
+            <a href="assets/cv/sultan-bashier-cv.pdf" download class="btn-main btn-outline">
+                {{ translationService.currentLang() === 'en' ? 'Download CV' : 'تحميل السيرة الذاتية' }} 
+                <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="profile-container">
+            <div class="profile-img-box">
+                <img src="assets/images/profile.jpg" alt="Sultan Ali Bashier">
+            </div>
+        </div>
+    </div>
+</section>

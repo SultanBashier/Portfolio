@@ -1,0 +1,21 @@
+<div class="project-card">
+    <div class="project-img">
+        <img [src]="project.imageUrl" [alt]="project.title" class="project-image" *ngIf="project.imageUrl; else showIcon">
+        <ng-template #showIcon>
+            <i [class]="'fas ' + project.icon + ' fa-3x'"></i>
+        </ng-template>
+        <div class="project-overlay">
+            <a [href]="project.githubUrl" class="overlay-link" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+    <div class="project-info">
+        <span class="category">{{ translatedCategory }}</span>
+        <h3>{{ translatedTitle }}</h3>
+        <p>{{ translatedDescription }}</p>
+        <div class="project-tech">
+            <span *ngFor="let tech of project.technologies">{{ tech }}</span>
+        </div>
+    </div>
+</div>

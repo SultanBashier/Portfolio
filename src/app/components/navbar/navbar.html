@@ -1,0 +1,49 @@
+<nav [class.scrolled]="isScrolled" [class.light-mode-nav]="!themeService.isDarkMode()">
+    <div class="logo">
+        {{ getLogoText() }}
+    </div>
+    
+    <ul class="nav-links desktop-nav">
+        <li><a href="#home" (click)="closeMenu()">{{ getNavItems().home }}</a></li>
+        <li><a href="#services" (click)="closeMenu()">{{ getNavItems().services }}</a></li>
+        <li><a href="#skills" (click)="closeMenu()">{{ getNavItems().skills }}</a></li>
+        <li><a href="#portfolio" (click)="closeMenu()">{{ getNavItems().portfolio }}</a></li>
+        <li><a href="#experience" (click)="closeMenu()">{{ getNavItems().journey }}</a></li>
+        <li><a href="#contact" (click)="closeMenu()">{{ getNavItems().contact }}</a></li>
+    </ul>
+    
+    <div class="right-actions">
+        <!-- Language Toggle Button -->
+        <div class="lang-toggle" (click)="toggleLanguage()">
+            <span class="lang-option" [class.active]="translationService.currentLang() === 'en'">EN</span>
+            <span class="lang-divider"></span>
+            <span class="lang-option" [class.active]="translationService.currentLang() === 'ar'">AR</span>
+        </div>
+        
+        <!-- Theme Toggle -->
+        <div class="theme-toggle" (click)="toggleTheme()">
+            <i [class]="themeService.isDarkMode() ? 'fas fa-moon' : 'fas fa-sun'"></i>
+        </div>
+        
+        <!-- Hamburger Menu -->
+        <div class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" [class.active]="isMenuOpen" (click)="closeMenu()">
+    <div class="mobile-menu-content" (click)="$event.stopPropagation()">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" (click)="closeMenu()">{{ getNavItems().home }}</a></li>
+            <li><a href="#services" (click)="closeMenu()">{{ getNavItems().services }}</a></li>
+            <li><a href="#skills" (click)="closeMenu()">{{ getNavItems().skills }}</a></li>
+            <li><a href="#portfolio" (click)="closeMenu()">{{ getNavItems().portfolio }}</a></li>
+            <li><a href="#experience" (click)="closeMenu()">{{ getNavItems().journey }}</a></li>
+            <li><a href="#contact" (click)="closeMenu()">{{ getNavItems().contact }}</a></li>
+        </ul>
+    </div>
+</div>

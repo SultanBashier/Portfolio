@@ -1,0 +1,60 @@
+<section class="section" id="contact">
+    <div class="contact-wrapper">
+        <!-- Info Panel -->
+        <div class="contact-info-panel">
+            <h2>{{ translationService.currentLang() === 'en' ? "Let's Work Together" : 'لنعمل معاً' }}</h2>
+            <p>{{ translationService.currentLang() === 'en' 
+                ? 'Have a project in mind? Let\'s turn your idea into reality with modern full-stack solutions.'
+                : 'هل لديك مشروع في ذهنك؟ دعنا نحول فكرتك إلى واقع مع حلول Full-Stack حديثة.'
+            }}</p>
+            <ul class="info-list">
+                <li> <i class="fas fa-phone"></i> (+2) 01111818357</li>
+              <a href="mailto:sultan.alhejeery@gmail.com" target="_blank"style="text-decoration: none;">  <li><i class="fas fa-envelope"></i> sultan.alhejeery@gmail.com</li> </a>
+                <li><i class="fas fa-map-marker-alt"></i> {{ translationService.currentLang() === 'en' ? 'Cairo, Egypt' : 'القاهرة، مصر' }}</li>
+               <a href="https://github.com/SultanBashier" target="_blank" style="text-decoration: none;"><li><i class="fab fa-github"></i> github.com/SultanBashier</li></a> 
+                <a href="https://linkedin.com/in/sultan-ali18" target="_blank"><li><i class="fab fa-linkedin"></i> linkedin.com/in/sultan-ali18</li></a>
+            </ul>
+            <!-- <div class="contact-social-links">
+                <a href="https://github.com/SultanBashier" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/sultan-ali18" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+            </div> -->
+        </div>
+
+        <!-- Form Panel -->
+        <div class="contact-form-panel">
+            <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="input-group">
+                    <input type="text" name="name" [(ngModel)]="formData.name" required>
+                    <label>{{ translationService.currentLang() === 'en' ? 'Full Name' : 'الاسم بالكامل' }}</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" [(ngModel)]="formData.email" required>
+                    <label>{{ translationService.currentLang() === 'en' ? 'Email Address' : 'البريد الإلكتروني' }}</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="subject" [(ngModel)]="formData.subject" required>
+                    <label>{{ translationService.currentLang() === 'en' ? 'Subject' : 'الموضوع' }}</label>
+                </div>
+                <div class="input-group">
+                    <textarea name="message" rows="4" [(ngModel)]="formData.message" required></textarea>
+                    <label>{{ translationService.currentLang() === 'en' ? 'Project Details...' : 'تفاصيل المشروع...' }}</label>
+                </div>
+                <button type="submit" class="btn-main btn-filled" [disabled]="isLoading">
+                    <span *ngIf="!isLoading">
+                        {{ translationService.currentLang() === 'en' ? 'Send Message' : 'إرسال الرسالة' }}
+                        <i class="fas fa-paper-plane"></i>
+                    </span>
+                    <span *ngIf="isLoading">
+                        {{ translationService.currentLang() === 'en' ? 'Sending...' : 'جاري الإرسال...' }}
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+            </form>
+
+            <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+            <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+        </div>
+    </div>
+</section>

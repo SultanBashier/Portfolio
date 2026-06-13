@@ -1,0 +1,20 @@
+<div class="stats-wrapper">
+    <div class="stats-grid" #statsGridRef>
+        <div class="stat-card">
+            <h2 class="counter" data-target="7">0</h2>
+            <p>{{ translationService.currentLang() === 'en' ? 'Completed Projects' : 'مشاريع مكتملة' }}</p>
+        </div>
+        <div class="stat-card">
+            <h2 class="counter" data-target="6">0</h2>
+            <p>{{ translationService.currentLang() === 'en' ? 'ITI Training (Months)' : 'تدريب ITI (شهور)' }}</p>
+        </div>
+        <div class="stat-card">
+            <h2 class="counter" data-target="1">0</h2>
+            <p>{{ translationService.currentLang() === 'en' ? 'APIs & Components' : 'API ومكونات' }}</p>
+        </div>
+        <div class="stat-card">
+            <h2 class="counter" data-target="100">0</h2>
+            <p>{{ translationService.currentLang() === 'en' ? 'Client Satisfaction' : 'رضا العملاء' }} %</p>
+        </div>
+    </div>
+</div>

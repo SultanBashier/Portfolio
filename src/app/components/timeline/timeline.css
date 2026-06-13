@@ -1,0 +1,266 @@
+.section {
+    padding: 100px 10%;
+    position: relative;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-header span {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.section-header .line {
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-item {
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: var(--neon-glow);
+}
+
+.timeline-content {
+    width: 45%;
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    transition: 0.4s;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+    text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: auto;
+    text-align: right;
+}
+
+.timeline-content:hover {
+    border-color: var(--primary);
+    transform: scale(1.02);
+}
+
+.timeline-content h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.timeline-content span {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color: var(--text-main);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+    .section {
+        padding: 80px 5%;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-dot {
+        left: 12px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: auto !important;
+        text-align: left !important;
+        padding: 20px;
+    }
+    
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .section-header {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 4%;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-header span {
+        font-size: 0.7rem;
+    }
+    
+    .section-header .line {
+        width: 40px;
+    }
+    
+    .timeline-content {
+        padding: 16px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+    
+    .timeline-content span {
+        font-size: 0.7rem;
+    }
+    
+    .timeline-content p {
+        font-size: 0.8rem;
+    }
+    
+    .timeline-item {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 4%;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-header span {
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+    }
+    
+    .section-header .line {
+        width: 35px;
+        height: 3px;
+    }
+    
+    .timeline-content {
+        padding: 14px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 0.9rem;
+    }
+    
+    .timeline-content span {
+        font-size: 0.65rem;
+    }
+    
+    .timeline-content p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .section {
+        padding: 120px 12%;
+    }
+    
+    .section-header h2 {
+        font-size: 3.2rem;
+    }
+    
+    .timeline {
+        max-width: 1100px;
+    }
+    
+    .timeline-content {
+        padding: 30px;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.4rem;
+    }
+}
+
+[dir="rtl"] .section-header span {
+    letter-spacing: 0;
+}
+
+[dir="rtl"] .timeline::before {
+    left: auto;
+    right: 50%;
+}
+
+[dir="rtl"] .timeline-dot {
+    left: auto;
+    right: calc(50% - 8px);
+}
+
+@media (max-width: 1100px) {
+    [dir="rtl"] .timeline::before {
+        left: auto;
+        right: 20px;
+    }
+    
+    [dir="rtl"] .timeline-dot {
+        left: auto;
+        right: 12px;
+    }
+    
+    [dir="rtl"] .timeline-content {
+        margin-right: auto !important;
+        margin-left: 0 !important;
+        text-align: right !important;
+    }
+}
