@@ -1,4 +1,4 @@
-﻿{
+{
     "projects":  [
                      {
                          "id":  1,
@@ -34,21 +34,23 @@
                          "technologies":  [
                                               "Angular",
                                               "ASP.NET Core Web API",
-                                              "EF Core",
+                                              "Entity Framework Core",
                                               "SQL Server",
                                               "JWT",
+                                              "Clean Architecture",
                                               "Cloudinary",
+                                              "SendGrid",
                                               "Paymob"
                                           ],
                          "id":  6,
-                         "githubBackendUrl":  "https://github.com/SultanBashier/FurniMinidAI.git",
+                         "githubBackendUrl":  "https://github.com/Ahmed-Adam0/HomeAi",
                          "imageUrl":  "assets/images/projects/Furimind.png",
                          "category":  "Full-Stack AI E-Commerce",
-                         "description":  "A production-ready AI-powered multi-vendor furniture marketplace. Features: AI Room Design, 3D Product Preview, AR, admin dashboards, multi-role auth, and payment gateway.",
+                         "description":  "AI-powered multi-vendor furniture marketplace connecting Customers, Vendors, Workshops, and Administrators.",
                          "icon":  "fa-couch",
-                         "githubFrontendUrl":  "https://github.com/SultanBashier/FurniMinidAI_Angular.git",
+                         "githubFrontendUrl":  "https://github.com/Ahmed-Adam0/HomeAi_Angular",
                          "title":  "FurniMind AI Marketplace",
-                         "liveDemoUrl":  "https://furni-minid-ai-angular.vercel.app/"
+                         "liveDemoUrl":  "https://furni-minid-ai-angular-pnrth7qvv-sultanalhejeery-9198s-projects.vercel.app"
                      },
                      {
                          "id":  4,

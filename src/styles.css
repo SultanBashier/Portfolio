@@ -57,21 +57,36 @@ body.language-switching {
     transform: translateY(15px);
 }
 
-a, button, .theme-toggle, .overlay-link {
+a,
+button,
+.theme-toggle,
+.overlay-link {
     cursor: pointer;
 }
 
-::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: var(--dark-base); }
-::-webkit-scrollbar-thumb { 
-    background: linear-gradient(var(--secondary), var(--primary)); 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-base);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--secondary), var(--primary));
     border-radius: 10px;
 }
 
 /* Background Animations */
 .bg-canvas {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    z-index: -2; pointer-events: none; overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    pointer-events: none;
+    overflow: hidden;
 }
 
 .blob {
@@ -82,19 +97,52 @@ a, button, .theme-toggle, .overlay-link {
     animation: float 25s infinite alternate ease-in-out;
 }
 
-.blob-1 { width: 600px; height: 600px; background: var(--primary); top: -200px; left: -200px; }
-.blob-2 { width: 500px; height: 500px; background: var(--secondary); bottom: -150px; right: -150px; animation-delay: -5s; }
-.blob-3 { width: 400px; height: 400px; background: var(--accent); top: 50%; left: 40%; animation-delay: -10s; }
+.blob-1 {
+    width: 600px;
+    height: 600px;
+    background: var(--primary);
+    top: -200px;
+    left: -200px;
+}
+
+.blob-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--secondary);
+    bottom: -150px;
+    right: -150px;
+    animation-delay: -5s;
+}
+
+.blob-3 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent);
+    top: 50%;
+    left: 40%;
+    animation-delay: -10s;
+}
 
 body.light-mode .blob {
     opacity: 0.15;
 }
 
 @keyframes float {
-    0% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(100px, 50px) scale(1.1); }
-    66% { transform: translate(-50px, 150px) scale(0.9); }
-    100% { transform: translate(0, 0) scale(1); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    33% {
+        transform: translate(100px, 50px) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-50px, 150px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
 }
 
 /* View Transitions for Dark/Light Mode ripple effect */

@@ -1,4 +1,4 @@
-﻿{
+{
     "projects":  [
                      {
                          "id":  1,
@@ -30,26 +30,28 @@
                          "imageUrl":  "assets/images/projects/Bulky.png",
                          "githubUrl":  "https://github.com/SultanBashier/E-Book.git"
                      },
-                     {
-                         "technologies":  [
-                                              "Angular",
-                                              "ASP.NET Core Web API",
-                                              "EF Core",
-                                              "SQL Server",
-                                              "JWT",
-                                              "Cloudinary",
-                                              "Paymob"
-                                          ],
-                         "id":  6,
-                         "githubBackendUrl":  "https://github.com/SultanBashier/FurniMinidAI.git",
-                         "imageUrl":  "assets/images/projects/Furimind.png",
-                         "category":  "تطبيق تجارة ذكي متكامل",
-                         "description":  "منصة تجارة إلكترونية متكاملة للأثاث مدعومة بالذكاء الاصطناعي. تشمل تصميم الغرف بالذكاء الاصطناعي، معاينة ثلاثية الأبعاد، الواقع المعزز، لوحات تحكم متقدمة، مصادقة متعددة الصلاحيات، وبوابة دفع.",
-                         "icon":  "fa-couch",
-                         "githubFrontendUrl":  "https://github.com/SultanBashier/FurniMinidAI_Angular.git",
-                         "title":  "منصة فيرني مايند الذكية للأثاث",
-                         "liveDemoUrl":  "https://furni-minid-ai-angular.vercel.app/"
-                     },
+                      {
+                          "technologies":  [
+                                               "Angular",
+                                               "ASP.NET Core Web API",
+                                               "Entity Framework Core",
+                                               "SQL Server",
+                                               "JWT",
+                                               "Clean Architecture",
+                                               "Cloudinary",
+                                               "SendGrid",
+                                               "Paymob"
+                                           ],
+                          "id":  6,
+                          "githubBackendUrl":  "https://github.com/Ahmed-Adam0/HomeAi",
+                          "imageUrl":  "assets/images/projects/Furimind.png",
+                          "category":  "تطبيق تجارة ذكي متكامل",
+                          "description":  "سوق أثاث متعدد البائعين مدعوم بالذكاء الاصطناعي يربط بين العملاء، البائعين، الورش، والمسؤولين.",
+                          "icon":  "fa-couch",
+                          "githubFrontendUrl":  "https://github.com/Ahmed-Adam0/HomeAi_Angular",
+                          "title":  "منصة فيرني مايند الذكية للأثاث",
+                          "liveDemoUrl":  "https://furni-minid-ai-angular-pnrth7qvv-sultanalhejeery-9198s-projects.vercel.app"
+                      },
                      {
                          "id":  4,
                          "technologies":  [

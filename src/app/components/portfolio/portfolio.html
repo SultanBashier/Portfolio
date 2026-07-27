@@ -10,7 +10,7 @@
         <h2>{{ translationService.currentLang() === 'en' ? 'Featured Projects' : 'مشاريع مميزة' }}</h2>
         <div class="line"></div>
     </div>
-    
+
     <div class="project-grid">
         <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
     </div>

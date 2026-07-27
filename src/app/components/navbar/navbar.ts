@@ -27,11 +27,11 @@ export class NavbarComponent {
 
     toggleLanguage() {
         document.body.classList.add('language-switching');
-        
+
         setTimeout(() => {
             this.translationService.toggleLanguage();
         }, 350);
-        
+
         setTimeout(() => {
             document.body.classList.remove('language-switching');
         }, 800);
@@ -50,11 +50,11 @@ export class NavbarComponent {
         this.isMenuOpen = false;
         document.body.style.overflow = '';
     }
-    
+
     getNavItems() {
         return this.translationService.getNavItems();
     }
-    
+
     getLogoText() {
         return this.translationService.getLogoText();
     }
