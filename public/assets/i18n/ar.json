@@ -1,0 +1,100 @@
+﻿{
+    "projects":  [
+                     {
+                         "id":  1,
+                         "technologies":  [
+                                              ".NET 8",
+                                              "MediatR",
+                                              "Redis",
+                                              "SQL Server"
+                                          ],
+                         "title":  "نظام إدارة المطاعم",
+                         "category":  "API متكامل",
+                         "description":  "معمارية نظيفة، CQRS، MediatR، تخزين مؤقت Redis، JWT مع صلاحيات متعددة.",
+                         "icon":  "fa-utensils",
+                         "imageUrl":  "assets/images/projects/resturant.png",
+                         "githubUrl":  "https://github.com/SultanBashier/Resturants-API.git"
+                     },
+                     {
+                         "id":  2,
+                         "technologies":  [
+                                              "ASP.NET Core 8",
+                                              "Stripe",
+                                              "Identity",
+                                              "Bootstrap"
+                                          ],
+                         "title":  "متجر كتب إلكتروني",
+                         "category":  "منصة تجارة إلكترونية",
+                         "description":  "معمارية متعددة الطبقات، دفع عبر Stripe، هوية ASP.NET مع OAuth.",
+                         "icon":  "fa-book",
+                         "imageUrl":  "assets/images/projects/Bulky.png",
+                         "githubUrl":  "https://github.com/SultanBashier/E-Book.git"
+                     },
+                     {
+                         "technologies":  [
+                                              "Angular",
+                                              "ASP.NET Core Web API",
+                                              "EF Core",
+                                              "SQL Server",
+                                              "JWT",
+                                              "Cloudinary",
+                                              "Paymob"
+                                          ],
+                         "id":  6,
+                         "githubBackendUrl":  "https://github.com/SultanBashier/FurniMinidAI.git",
+                         "imageUrl":  "assets/images/projects/Furimind.png",
+                         "category":  "تطبيق تجارة ذكي متكامل",
+                         "description":  "منصة تجارة إلكترونية متكاملة للأثاث مدعومة بالذكاء الاصطناعي. تشمل تصميم الغرف بالذكاء الاصطناعي، معاينة ثلاثية الأبعاد، الواقع المعزز، لوحات تحكم متقدمة، مصادقة متعددة الصلاحيات، وبوابة دفع.",
+                         "icon":  "fa-couch",
+                         "githubFrontendUrl":  "https://github.com/SultanBashier/FurniMinidAI_Angular.git",
+                         "title":  "منصة فيرني مايند الذكية للأثاث",
+                         "liveDemoUrl":  "https://furni-minid-ai-angular.vercel.app/"
+                     },
+                     {
+                         "id":  4,
+                         "technologies":  [
+                                              "C# .NET",
+                                              "WinForms",
+                                              "Clean Architecture",
+                                              "SQL Server"
+                                          ],
+                         "title":  "نظام إدارة التجارة الإلكترونية",
+                         "category":  "تطبيق .NET متكامل",
+                         "description":  "نظام إدارة متجر إلكتروني متكامل مع لوحة تحكم للمدير (WinForms)، ومعمارية نظيفة. يشمل إدارة المنتجات، تتبع الطلبات، إدارة المستخدمين، وتقارير المبيعات.",
+                         "icon":  "fa-store",
+                         "imageUrl":  "assets/images/projects/Windosform.png",
+                         "githubUrl":  "https://github.com/SultanBashier/ECommerceAppProject"
+                     },
+                     {
+                         "id":  5,
+                         "technologies":  [
+                                              "HTML5",
+                                              "CSS3",
+                                              "JavaScript",
+                                              "JSON"
+                                          ],
+                         "title":  "كيميت ستور - منصة تجارة إلكترونية",
+                         "category":  "تطبيق ويب Client-Side",
+                         "description":  "تطبيق ويب تجارة إلكترونية من جانب العميل باستخدام HTML و CSS و JavaScript النقي. يشمل كتالوج منتجات، بحث فوري، سلة تسوق، قائمة رغبات، وتصميم متجاوب.",
+                         "icon":  "fa-landmark",
+                         "imageUrl":  "assets/images/projects/Kemet.png",
+                         "githubUrl":  "https://github.com/SultanBashier/Client-Side-Project"
+                     },
+                     {
+                         "id":  7,
+                         "technologies":  [
+                                              "Angular",
+                                              "TypeScript",
+                                              "CSS3",
+                                              "HTML5",
+                                              "View Transitions"
+                                          ],
+                         "title":  "موقع معرض الأعمال الشخصي",
+                         "category":  "تطبيق ويب Client-Side",
+                         "description":  "موقع معرض أعمال شخصي عصري وتفاعلي ومتجاوب مبني باستخدام Angular، ويتميز بتأثير انتقال دائري بين الوضع المظلم والمضيء، والرسوم المتحركة، ودعم كامل للترجمة.",
+                         "icon":  "fa-user-tie",
+                         "imageUrl":  "assets/images/projects/portfilo.png",
+                         "githubUrl":  "https://github.com/SultanBashier/Portfolio.git"
+                     }
+                 ]
+}

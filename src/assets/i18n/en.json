@@ -1,0 +1,100 @@
+﻿{
+    "projects":  [
+                     {
+                         "id":  1,
+                         "technologies":  [
+                                              ".NET 8",
+                                              "MediatR",
+                                              "Redis",
+                                              "SQL Server"
+                                          ],
+                         "title":  "Restaurant Management System",
+                         "category":  "Back End API",
+                         "description":  "Clean Architecture, CQRS, MediatR, Redis caching, JWT with role-based access.",
+                         "icon":  "fa-utensils",
+                         "imageUrl":  "assets/images/projects/resturant.png",
+                         "githubUrl":  "https://github.com/SultanBashier/Resturants-API.git"
+                     },
+                     {
+                         "id":  2,
+                         "technologies":  [
+                                              "ASP.NET Core 8",
+                                              "Stripe",
+                                              "Identity",
+                                              "Bootstrap"
+                                          ],
+                         "title":  "Online Book Shop",
+                         "category":  "E-Commerce Platform",
+                         "description":  "N-Tier architecture, Stripe payment, ASP.NET Identity with OAuth (Google/Microsoft).",
+                         "icon":  "fa-book",
+                         "imageUrl":  "assets/images/projects/Bulky.png",
+                         "githubUrl":  "https://github.com/SultanBashier/E-Book.git"
+                     },
+                     {
+                         "technologies":  [
+                                              "Angular",
+                                              "ASP.NET Core Web API",
+                                              "EF Core",
+                                              "SQL Server",
+                                              "JWT",
+                                              "Cloudinary",
+                                              "Paymob"
+                                          ],
+                         "id":  6,
+                         "githubBackendUrl":  "https://github.com/SultanBashier/FurniMinidAI.git",
+                         "imageUrl":  "assets/images/projects/Furimind.png",
+                         "category":  "Full-Stack AI E-Commerce",
+                         "description":  "A production-ready AI-powered multi-vendor furniture marketplace. Features: AI Room Design, 3D Product Preview, AR, admin dashboards, multi-role auth, and payment gateway.",
+                         "icon":  "fa-couch",
+                         "githubFrontendUrl":  "https://github.com/SultanBashier/FurniMinidAI_Angular.git",
+                         "title":  "FurniMind AI Marketplace",
+                         "liveDemoUrl":  "https://furni-minid-ai-angular.vercel.app/"
+                     },
+                     {
+                         "id":  4,
+                         "technologies":  [
+                                              "C# .NET",
+                                              "WinForms",
+                                              "Clean Architecture",
+                                              "SQL Server"
+                                          ],
+                         "title":  "E-Commerce Management System",
+                         "category":  "Full-Stack .NET App",
+                         "description":  "Complete e-commerce management system with Admin Dashboard (WinForms), Clean Architecture, and .NET backend.",
+                         "icon":  "fa-store",
+                         "imageUrl":  "assets/images/projects/Windosform.png",
+                         "githubUrl":  "https://github.com/SultanBashier/ECommerceAppProject"
+                     },
+                     {
+                         "id":  5,
+                         "technologies":  [
+                                              "HTML5",
+                                              "CSS3",
+                                              "JavaScript",
+                                              "JSON"
+                                          ],
+                         "title":  "Kemet Store - E-Commerce Platform",
+                         "category":  "Client-Side Web App",
+                         "description":  "Complete client-side e-commerce web application with product catalog, real-time search, shopping cart, wishlist, checkout, and responsive design.",
+                         "icon":  "fa-landmark",
+                         "imageUrl":  "assets/images/projects/Kemet.png",
+                         "githubUrl":  "https://github.com/SultanBashier/Client-Side-Project"
+                     },
+                     {
+                         "id":  7,
+                         "technologies":  [
+                                              "Angular",
+                                              "TypeScript",
+                                              "CSS3",
+                                              "HTML5",
+                                              "View Transitions"
+                                          ],
+                         "title":  "Personal Portfolio Website",
+                         "category":  "Client-Side Web App",
+                         "description":  "A modern, highly interactive, and responsive portfolio website built with Angular, featuring dark/light mode view transitions, animations, and full English/Arabic translations.",
+                         "icon":  "fa-user-tie",
+                         "imageUrl":  "assets/images/projects/portfilo.png",
+                         "githubUrl":  "https://github.com/SultanBashier/Portfolio.git"
+                     }
+                 ]
+}

@@ -49,7 +49,12 @@ body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     line-height: 1.7;
-    transition: background-color 0.3s ease, color 0.2s ease;
+    transition: background-color 0.3s ease, color 0.2s ease, opacity 0.35s ease-in-out, transform 0.35s ease-in-out;
+}
+
+body.language-switching {
+    opacity: 0;
+    transform: translateY(15px);
 }
 
 a, button, .theme-toggle, .overlay-link {
@@ -90,4 +95,27 @@ body.light-mode .blob {
     33% { transform: translate(100px, 50px) scale(1.1); }
     66% { transform: translate(-50px, 150px) scale(0.9); }
     100% { transform: translate(0, 0) scale(1); }
+}
+
+/* View Transitions for Dark/Light Mode ripple effect */
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+    z-index: 1;
+}
+
+::view-transition-new(root) {
+    z-index: 9999;
+}
+
+.light-mode::view-transition-old(root) {
+    z-index: 9999;
+}
+
+.light-mode::view-transition-new(root) {
+    z-index: 1;
 }

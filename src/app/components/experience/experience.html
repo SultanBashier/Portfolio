@@ -1,0 +1,28 @@
+<section class="section" id="work-experience">
+    <div class="section-header">
+        <span>{{ translationService.currentLang() === 'en' ? 'Professional History' : 'التاريخ المهني' }}</span>
+        <h2>{{ translationService.currentLang() === 'en' ? 'Work Experience' : 'الخبرات المهنية' }}</h2>
+        <div class="line"></div>
+    </div>
+    
+    <div class="experience-container">
+        <div class="experience-card" *ngFor="let exp of getExperiences()">
+            <div class="experience-icon">
+                <i [class]="'fas ' + exp.icon"></i>
+            </div>
+            <div class="experience-details">
+                <div class="exp-header">
+                    <h3>{{ exp.title }}</h3>
+                    <span class="exp-date">{{ exp.location }} | {{ exp.date }}</span>
+                </div>
+                <h4 class="exp-client">{{ exp.client }}</h4>
+                <ul class="exp-bullets">
+                    <li *ngFor="let bullet of exp.bullets">
+                        <i [class]="'fas bullet-icon ' + (translationService.currentLang() === 'en' ? 'fa-chevron-right' : 'fa-chevron-left')"></i>
+                        <span>{{ bullet }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

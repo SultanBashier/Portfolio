@@ -1,10 +1,12 @@
 import { Injectable, signal } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
 export class TranslationService {
     currentLang = signal<'en' | 'ar'>('en');
+    languageChanged = new Subject<'en' | 'ar'>();
 
     constructor() {
         const savedLang = localStorage.getItem('language') as 'en' | 'ar';
@@ -19,6 +21,7 @@ export class TranslationService {
         this.currentLang.set(newLang);
         localStorage.setItem('language', newLang);
         this.applyLanguageSettings(newLang);
+        this.languageChanged.next(newLang);
     }
 
     private applyLanguageSettings(lang: 'en' | 'ar') {
@@ -47,6 +50,7 @@ export class TranslationService {
             services: this.currentLang() === 'en' ? 'Services' : 'الخدمات',
             skills: this.currentLang() === 'en' ? 'Skills' : 'المهارات',
             portfolio: this.currentLang() === 'en' ? 'Portfolio' : 'أعمالي',
+            experience: this.currentLang() === 'en' ? 'Experience' : 'الخبرة',
             journey: this.currentLang() === 'en' ? 'Journey' : 'رحلتي',
             contact: this.currentLang() === 'en' ? 'Contact' : 'تواصل معي'
         };

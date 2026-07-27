@@ -174,3 +174,68 @@ body.light-mode .project-tech span {
 [dir="rtl"] .project-info .category {
     letter-spacing: 0;
 }
+
+.project-tech.mb-auto {
+    margin-bottom: 20px;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-actions .btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition-fast);
+}
+
+.project-actions .btn-primary {
+    background: var(--primary);
+    color: #000;
+    border: 1px solid var(--primary);
+}
+
+.project-actions .btn-primary:hover {
+    background: transparent;
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--neon-glow);
+}
+
+.project-actions .btn-secondary {
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    background: transparent;
+}
+
+.project-actions .btn-secondary:hover {
+    border-color: var(--primary);
+    background: var(--glass);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+body.light-mode .project-actions .btn-primary {
+    color: #fff;
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+body.light-mode .project-actions .btn-primary:hover {
+    background: transparent;
+    color: var(--primary-dark);
+}
+
+body.light-mode .project-actions .btn-secondary:hover {
+    border-color: var(--primary-dark);
+    color: var(--primary-dark);
+}

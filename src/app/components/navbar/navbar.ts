@@ -21,8 +21,8 @@ export class NavbarComponent {
         this.isScrolled = window.scrollY > 50;
     }
 
-    toggleTheme() {
-        this.themeService.toggleTheme();
+    toggleTheme(event: MouseEvent) {
+        this.themeService.toggleTheme(event);
     }
 
     toggleLanguage() {
@@ -30,11 +30,11 @@ export class NavbarComponent {
         
         setTimeout(() => {
             this.translationService.toggleLanguage();
-        }, 50);
+        }, 350);
         
         setTimeout(() => {
             document.body.classList.remove('language-switching');
-        }, 600);
+        }, 800);
     }
 
     toggleMenu() {

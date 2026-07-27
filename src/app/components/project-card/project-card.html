@@ -4,18 +4,31 @@
         <ng-template #showIcon>
             <i [class]="'fas ' + project.icon + ' fa-3x'"></i>
         </ng-template>
-        <div class="project-overlay">
-            <a [href]="project.githubUrl" class="overlay-link" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
     </div>
     <div class="project-info">
         <span class="category">{{ translatedCategory }}</span>
         <h3>{{ translatedTitle }}</h3>
         <p>{{ translatedDescription }}</p>
-        <div class="project-tech">
+        <div class="project-tech mb-auto">
             <span *ngFor="let tech of project.technologies">{{ tech }}</span>
+        </div>
+        <div class="project-actions">
+            <a *ngIf="project.liveDemoUrl" [href]="project.liveDemoUrl" target="_blank" class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i>
+                <span>{{ translationService.currentLang() === 'en' ? 'Live Demo' : 'عرض مباشر' }}</span>
+            </a>
+            <a *ngIf="project.githubFrontendUrl" [href]="project.githubFrontendUrl" target="_blank" class="btn btn-secondary">
+                <i class="fab fa-github"></i>
+                <span>{{ translationService.currentLang() === 'en' ? 'Frontend' : 'الواجهة الأمامية' }}</span>
+            </a>
+            <a *ngIf="project.githubBackendUrl" [href]="project.githubBackendUrl" target="_blank" class="btn btn-secondary">
+                <i class="fas fa-code-branch"></i>
+                <span>{{ translationService.currentLang() === 'en' ? 'Backend' : 'الخلفية البرمجية' }}</span>
+            </a>
+            <a *ngIf="project.githubUrl && !project.githubFrontendUrl && !project.githubBackendUrl" [href]="project.githubUrl" target="_blank" class="btn btn-secondary">
+                <i class="fab fa-github"></i>
+                <span>{{ translationService.currentLang() === 'en' ? 'GitHub' : 'جيت هاب' }}</span>
+            </a>
         </div>
     </div>
 </div>

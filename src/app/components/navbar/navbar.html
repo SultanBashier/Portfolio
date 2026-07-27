@@ -8,6 +8,7 @@
         <li><a href="#services" (click)="closeMenu()">{{ getNavItems().services }}</a></li>
         <li><a href="#skills" (click)="closeMenu()">{{ getNavItems().skills }}</a></li>
         <li><a href="#portfolio" (click)="closeMenu()">{{ getNavItems().portfolio }}</a></li>
+        <li><a href="#work-experience" (click)="closeMenu()">{{ getNavItems().experience }}</a></li>
         <li><a href="#experience" (click)="closeMenu()">{{ getNavItems().journey }}</a></li>
         <li><a href="#contact" (click)="closeMenu()">{{ getNavItems().contact }}</a></li>
     </ul>
@@ -21,7 +22,7 @@
         </div>
         
         <!-- Theme Toggle -->
-        <div class="theme-toggle" (click)="toggleTheme()">
+        <div class="theme-toggle" (click)="toggleTheme($event)">
             <i [class]="themeService.isDarkMode() ? 'fas fa-moon' : 'fas fa-sun'"></i>
         </div>
         
@@ -42,6 +43,7 @@
             <li><a href="#services" (click)="closeMenu()">{{ getNavItems().services }}</a></li>
             <li><a href="#skills" (click)="closeMenu()">{{ getNavItems().skills }}</a></li>
             <li><a href="#portfolio" (click)="closeMenu()">{{ getNavItems().portfolio }}</a></li>
+            <li><a href="#work-experience" (click)="closeMenu()">{{ getNavItems().experience }}</a></li>
             <li><a href="#experience" (click)="closeMenu()">{{ getNavItems().journey }}</a></li>
             <li><a href="#contact" (click)="closeMenu()">{{ getNavItems().contact }}</a></li>
         </ul>
