@@ -19,7 +19,7 @@ export class ExperienceComponent {
                 title: isEn ? 'Freelance Full Stack .NET Developer' : 'مطور دوت نت وأنغولار متكامل (حر)',
                 client: isEn ? 'Private Client (Saudi Arabia)' : 'عميل خاص (المملكة العربية السعودية)',
                 location: isEn ? 'Remote' : 'عن بعد',
-                date: isEn ? 'April 2026' : 'أبريل 2026',
+                date: isEn ? 'March 2026' : 'مارس 2026',
                 icon: 'fa-laptop-code',
                 description: isEn 
                     ? 'Auto Spare Parts Stores & Warehouse Management System' 
